@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : 10D5AC655FDBD99DD7DAD265848DBC2D6C1877EECFB805A8C73192E74E8008A3
+Path      : C:\AndroidProjects\MyReminder\app\build\outputs\apk\debug\app-debug.apk
+
