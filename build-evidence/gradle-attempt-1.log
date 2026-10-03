@@ -16,34 +16,16 @@
 > Task :app:processDebugManifest UP-TO-DATE
 > Task :app:processDebugManifestForPackage UP-TO-DATE
 > Task :app:processDebugResources UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
 > Task :app:javaPreCompileDebug UP-TO-DATE
-> Task :app:preDebugUnitTestBuild UP-TO-DATE
-> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
-> Task :app:mergeDebugShaders UP-TO-DATE
-> Task :app:compileDebugShaders NO-SOURCE
-> Task :app:generateDebugAssets UP-TO-DATE
-> Task :app:mergeDebugAssets UP-TO-DATE
-> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
-> Task :app:processDebugUnitTestManifest UP-TO-DATE
-> Task :app:generateDebugUnitTestConfig UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
 > Task :app:preDebugAndroidTestBuild SKIPPED
-> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
-> Task :app:extractProguardFiles UP-TO-DATE
-> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
-> Task :app:compressDebugAssets UP-TO-DATE
-> Task :app:desugarDebugFileDependencies UP-TO-DATE
-> Task :app:checkDebugDuplicateClasses UP-TO-DATE
-> Task :app:mergeExtDexDebug UP-TO-DATE
-> Task :app:mergeLibDexDebug UP-TO-DATE
-> Task :app:mergeDebugJniLibFolders UP-TO-DATE
-> Task :app:mergeDebugNativeLibs UP-TO-DATE
-> Task :app:stripDebugDebugSymbols UP-TO-DATE
-> Task :app:validateSigningDebug UP-TO-DATE
-> Task :app:writeDebugAppMetadata UP-TO-DATE
-> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
 > Task :app:checkDebugAndroidTestAarMetadata UP-TO-DATE
 > Task :app:processDebugAndroidTestNavigationResources UP-TO-DATE
 > Task :app:compileDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
 > Task :app:mapDebugAndroidTestSourceSetPaths UP-TO-DATE
 > Task :app:generateDebugAndroidTestResources UP-TO-DATE
 > Task :app:mergeDebugAndroidTestResources UP-TO-DATE
@@ -60,70 +42,71 @@
 > Task :app:mergeExtDexDebugAndroidTest UP-TO-DATE
 > Task :app:mergeLibDexDebugAndroidTest UP-TO-DATE
 > Task :app:mergeDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
 > Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
 > Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
 > Task :app:validateSigningDebugAndroidTest UP-TO-DATE
 > Task :app:writeDebugAndroidTestSigningConfigVersions UP-TO-DATE
-> Task :app:kspDebugKotlin
-> Task :app:compileDebugKotlin
-> Task :app:compileDebugJavaWithJavac NO-SOURCE
-> Task :app:bundleDebugClassesToRuntimeJar
-> Task :app:bundleDebugClassesToCompileJar
-> Task :app:processDebugJavaRes UP-TO-DATE
-> Task :app:generateDebugAndroidTestLintModel
-> Task :app:generateDebugLintReportModel
-> Task :app:generateDebugUnitTestLintModel
-> Task :app:kspDebugUnitTestKotlin
-> Task :app:compileDebugUnitTestKotlin
-> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
-> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
-> Task :app:testDebugUnitTest
-> Task :app:lintAnalyzeDebug
-> Task :app:lintAnalyzeDebugAndroidTest
-> Task :app:lintAnalyzeDebugUnitTest
-> Task :app:dexBuilderDebug
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDebug UP-TO-DATE
 > Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
 > Task :app:mergeDebugJavaResource UP-TO-DATE
-> Task :app:mergeProjectDexDebug
-> Task :app:packageDebug
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeProjectDexDebug UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:packageDebug UP-TO-DATE
 > Task :app:createDebugApkListingFileRedirect UP-TO-DATE
-> Task :app:assembleDebug
 > Task :app:kspDebugAndroidTestKotlin
 > Task :app:compileDebugAndroidTestKotlin
 > Task :app:compileDebugAndroidTestJavaWithJavac NO-SOURCE
-> Task :app:dexBuilderDebugAndroidTest UP-TO-DATE
-> Task :app:mergeDebugAndroidTestGlobalSynthetics UP-TO-DATE
-> Task :app:processDebugAndroidTestJavaRes UP-TO-DATE
-> Task :app:mergeDebugAndroidTestJavaResource UP-TO-DATE
-> Task :app:mergeProjectDexDebugAndroidTest UP-TO-DATE
-> Task :app:packageDebugAndroidTest UP-TO-DATE
-> Task :app:createDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:dexBuilderDebugAndroidTest
+> Task :app:mergeDebugAndroidTestGlobalSynthetics
+> Task :app:processDebugAndroidTestJavaRes
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:assembleDebugAndroidTest
 > Task :app:connectedDebugAndroidTest
-Starting 14 tests on MindOrbit_API33(AVD) - 13
+Starting 15 tests on MindOrbit_API33(AVD) - 13
 
-MindOrbit_API33(AVD) - 13 Tests 0/14 completed. (0 skipped) (0 failed)
-MindOrbit_API33(AVD) - 13 Tests 1/14 completed. (0 skipped) (0 failed)
-MindOrbit_API33(AVD) - 13 Tests 2/14 completed. (0 skipped) (0 failed)
-MindOrbit_API33(AVD) - 13 Tests 6/14 completed. (0 skipped) (0 failed)
+MindOrbit_API33(AVD) - 13 Tests 0/15 completed. (0 skipped) (0 failed)
 
 > Task :app:connectedDebugAndroidTest
 
-app.mindorbit.WorkflowTest > e2e07NotificationActions[MindOrbit_API33(AVD) - 13] [31mFAILED [0m
-	java.lang.AssertionError: Activity never becomes requested state "[DESTROYED]" (last lifecycle transition = "PAUSED")
-	at androidx.test.core.app.ActivityScenario.waitForActivityToBecomeAnyOf(ActivityScenario.java:454)
+app.mindorbit.SafWorkflowTest > exportDeleteImportUsingDocumentPicker[MindOrbit_API33(AVD) - 13] [31mFAILED [0m
+	java.lang.AssertionError: Exported JSON should appear in Downloads
+	at org.junit.Assert.fail(Assert.java:89)
 
-MindOrbit_API33(AVD) - 13 Tests 7/14 completed. (0 skipped) (1 failed)
-MindOrbit_API33(AVD) - 13 Tests 11/14 completed. (0 skipped) (1 failed)
+MindOrbit_API33(AVD) - 13 Tests 1/15 completed. (0 skipped) (1 failed)
+MindOrbit_API33(AVD) - 13 Tests 2/15 completed. (0 skipped) (1 failed)
+MindOrbit_API33(AVD) - 13 Tests 3/15 completed. (0 skipped) (1 failed)
+MindOrbit_API33(AVD) - 13 Tests 6/15 completed. (0 skipped) (1 failed)
+MindOrbit_API33(AVD) - 13 Tests 8/15 completed. (0 skipped) (1 failed)
+MindOrbit_API33(AVD) - 13 Tests 10/15 completed. (0 skipped) (1 failed)
+MindOrbit_API33(AVD) - 13 Tests 12/15 completed. (0 skipped) (1 failed)
 
 > Task :app:connectedDebugAndroidTest
 
 app.mindorbit.WorkflowTest > e2e12LargeListSearch[MindOrbit_API33(AVD) - 13] [31mFAILED [0m
-	androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 10000 ms
-	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:755)
+	java.lang.AssertionError: Failed to inject touch input.
+	Reason: Expected exactly '1' node but could not find any node that satisfies: (ContentDescription = 'Reminders' (ignoreCase: false))
 
-MindOrbit_API33(AVD) - 13 Tests 12/14 completed. (0 skipped) (2 failed)
-MindOrbit_API33(AVD) - 13 Tests 14/14 completed. (0 skipped) (2 failed)
-Finished 14 tests on MindOrbit_API33(AVD) - 13
+MindOrbit_API33(AVD) - 13 Tests 13/15 completed. (0 skipped) (2 failed)
+MindOrbit_API33(AVD) - 13 Tests 15/15 completed. (0 skipped) (2 failed)
+Finished 15 tests on MindOrbit_API33(AVD) - 13
 
 > Task :app:connectedDebugAndroidTest
 Tests on MindOrbit_API33(AVD) - 13 failed: There was 2 failure(s).
@@ -142,5 +125,5 @@ Execution failed for task ':app:connectedDebugAndroidTest'.
 > Run with --scan to get full insights.
 > Get more help at https://help.gradle.org.
 
-BUILD FAILED in 6m 58s
-85 actionable tasks: 19 executed, 66 up-to-date
+BUILD FAILED in 6m 22s
+69 actionable tasks: 10 executed, 59 up-to-date

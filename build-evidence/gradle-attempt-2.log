@@ -1,36 +1,18 @@
-Starting a Gradle Daemon, 3 stopped Daemons could not be reused, use --status for details
+Starting a Gradle Daemon, 2 stopped Daemons could not be reused, use --status for details
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
 > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :app:checkDebugAarMetadata UP-TO-DATE
-> Task :app:processDebugNavigationResources UP-TO-DATE
-> Task :app:compileDebugNavigationResources UP-TO-DATE
-> Task :app:generateDebugResValues UP-TO-DATE
-> Task :app:mapDebugSourceSetPaths UP-TO-DATE
-> Task :app:generateDebugResources UP-TO-DATE
-> Task :app:mergeDebugResources UP-TO-DATE
-> Task :app:packageDebugResources UP-TO-DATE
-> Task :app:parseDebugLocalResources UP-TO-DATE
-> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
-> Task :app:extractDeepLinksDebug UP-TO-DATE
-> Task :app:processDebugMainManifest UP-TO-DATE
-> Task :app:processDebugManifest UP-TO-DATE
-> Task :app:processDebugManifestForPackage UP-TO-DATE
-> Task :app:processDebugResources UP-TO-DATE
-> Task :app:kspDebugKotlin
-> Task :app:kspDebugKotlin FAILED
+> Task :app:checkDebugAarMetadata
+> Task :app:checkDebugAarMetadata FAILED
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':app:kspDebugKotlin'.
-> Could not resolve all files for configuration ':app:detachedConfiguration14'.
-   > Multiple build operations failed.
-         Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8b1a30187fa76b1d61a284200e65db9d-b6f953ca-5f26-4d57-bc57-853b2767f9b1) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8b1a30187fa76b1d61a284200e65db9d)
-         Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\d1ce7d85e08d2e9f5f15b9993321c0f6-842231b2-23bb-4248-a596-1a5366a61413) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\d1ce7d85e08d2e9f5f15b9993321c0f6)
-      > Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8b1a30187fa76b1d61a284200e65db9d-b6f953ca-5f26-4d57-bc57-853b2767f9b1) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8b1a30187fa76b1d61a284200e65db9d)
-      > Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\d1ce7d85e08d2e9f5f15b9993321c0f6-842231b2-23bb-4248-a596-1a5366a61413) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\d1ce7d85e08d2e9f5f15b9993321c0f6)
+Execution failed for task ':app:checkDebugAarMetadata'.
+> A build operation failed.
+      Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8697dfd2e18e9a9cb7af554b8370c28b-73b8b689-ffce-4310-856b-a92fb42f040f) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8697dfd2e18e9a9cb7af554b8370c28b)
+   > Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8697dfd2e18e9a9cb7af554b8370c28b-73b8b689-ffce-4310-856b-a92fb42f040f) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\8697dfd2e18e9a9cb7af554b8370c28b)
 
 * Try:
 > Run with --stacktrace option to get the stack trace.
@@ -38,5 +20,5 @@ Execution failed for task ':app:kspDebugKotlin'.
 > Run with --scan to get full insights.
 > Get more help at https://help.gradle.org.
 
-BUILD FAILED in 59s
-16 actionable tasks: 1 executed, 15 up-to-date
+BUILD FAILED in 2m 59s
+1 actionable task: 1 executed

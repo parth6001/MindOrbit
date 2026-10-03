@@ -2,6 +2,7 @@
 .toolchain/
 local.properties
 **/build/
+build-evidence/
 *.jks
 *.keystore
 keystore.properties

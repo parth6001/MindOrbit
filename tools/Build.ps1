@@ -9,7 +9,7 @@ $env:ANDROID_USER_HOME = Join-Path $project '.toolchain\android-user'
 $gradle = Join-Path $project '.toolchain\gradle\gradle-8.13\bin\gradle.bat'
 New-Item -ItemType Directory -Force (Join-Path $project 'build-evidence') | Out-Null
 for ($attempt = 1; $attempt -le 8; $attempt++) {
-    $log = Join-Path $project "build-evidence\gradle-attempt-$attempt.log"
+    $log = Join-Path $project "build-evidence\gradle-attempt-$([DateTime]::Now.ToString('yyyyMMdd-HHmmss'))-$attempt.log"
     & $gradle @Tasks --console=plain --max-workers=2 '-Dorg.gradle.internal.instrumentation.agent=false' '-Dorg.gradle.vfs.watch=false' 2>&1 | Tee-Object -FilePath $log
     $result = $LASTEXITCODE
     if ($result -eq 0) { exit 0 }

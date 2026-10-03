@@ -1,67 +1,39 @@
-Starting a Gradle Daemon, 4 stopped Daemons could not be reused, use --status for details
+Starting a Gradle Daemon, 3 stopped Daemons could not be reused, use --status for details
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
 > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :app:checkDebugAarMetadata UP-TO-DATE
-> Task :app:processDebugNavigationResources UP-TO-DATE
-> Task :app:compileDebugNavigationResources UP-TO-DATE
-> Task :app:generateDebugResValues UP-TO-DATE
-> Task :app:mapDebugSourceSetPaths UP-TO-DATE
-> Task :app:generateDebugResources UP-TO-DATE
-> Task :app:mergeDebugResources UP-TO-DATE
-> Task :app:packageDebugResources UP-TO-DATE
-> Task :app:parseDebugLocalResources UP-TO-DATE
-> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
-> Task :app:extractDeepLinksDebug UP-TO-DATE
-> Task :app:processDebugMainManifest UP-TO-DATE
-> Task :app:processDebugManifest UP-TO-DATE
-> Task :app:processDebugManifestForPackage UP-TO-DATE
-> Task :app:processDebugResources UP-TO-DATE
-> Task :app:javaPreCompileDebug UP-TO-DATE
-> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:checkDebugAarMetadata
+> Task :app:processDebugNavigationResources
+> Task :app:generateDebugResValues
+> Task :app:compileDebugNavigationResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugShaders
 > Task :app:compileDebugShaders NO-SOURCE
 > Task :app:generateDebugAssets UP-TO-DATE
-> Task :app:mergeDebugAssets UP-TO-DATE
-> Task :app:compressDebugAssets UP-TO-DATE
-> Task :app:desugarDebugFileDependencies UP-TO-DATE
-> Task :app:checkDebugDuplicateClasses
-> Task :app:kspDebugKotlin
-> Task :app:mergeExtDexDebug
-> Task :app:compileDebugKotlin
-> Task :app:mergeLibDexDebug
-> Task :app:mergeDebugJniLibFolders
-> Task :app:mergeDebugNativeLibs
-
-> Task :app:stripDebugDebugSymbols
-Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so. Run with --info option to learn more.
-
-> Task :app:validateSigningDebug
-> Task :app:writeDebugAppMetadata
-> Task :app:writeDebugSigningConfigVersions
-> Task :app:preDebugUnitTestBuild UP-TO-DATE
-> Task :app:javaPreCompileDebugUnitTest
-> Task :app:packageDebugUnitTestForUnitTest
-> Task :app:processDebugUnitTestManifest
-> Task :app:generateDebugUnitTestConfig
-> Task :app:preDebugAndroidTestBuild SKIPPED
-> Task :app:generateDebugAndroidTestResValues
-> Task :app:extractProguardFiles
-
-> Task :app:compileDebugKotlin
-e: file:///C:/AndroidProjects/MyReminder/app/src/main/java/app/mindorbit/ui/EditorScreen.kt:113:104 Unresolved reference 'template'.
-e: file:///C:/AndroidProjects/MyReminder/app/src/main/java/app/mindorbit/ui/EditorScreen.kt:113:127 Unresolved reference 'it'.
-e: file:///C:/AndroidProjects/MyReminder/app/src/main/java/app/mindorbit/ui/EditorScreen.kt:113:147 Unresolved reference 'second'.
-
-> Task :app:compileDebugKotlin FAILED
-> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:processDebugResources
+> Task :app:checkDebugDuplicateClasses FAILED
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':app:compileDebugKotlin'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-   > Compilation error. See log for more details
+Execution failed for task ':app:checkDebugDuplicateClasses'.
+> A build operation failed.
+      Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\c155961c13dec0e7c098893876158f63-509f9241-2b09-436e-87d4-74a83c9f2df1) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\c155961c13dec0e7c098893876158f63)
+   > Could not move temporary workspace (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\c155961c13dec0e7c098893876158f63-509f9241-2b09-436e-87d4-74a83c9f2df1) to immutable location (C:\AndroidProjects\MyReminder\.toolchain\gradle-home\caches\8.13\transforms\c155961c13dec0e7c098893876158f63)
 
 * Try:
 > Run with --stacktrace option to get the stack trace.
@@ -69,5 +41,5 @@ Execution failed for task ':app:compileDebugKotlin'.
 > Run with --scan to get full insights.
 > Get more help at https://help.gradle.org.
 
-BUILD FAILED in 6m 48s
-38 actionable tasks: 18 executed, 20 up-to-date
+BUILD FAILED in 56s
+21 actionable tasks: 21 executed

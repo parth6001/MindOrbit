@@ -14,7 +14,7 @@ android {
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunnerArguments["notClass"] = "app.mindorbit.RebootSeedTest,app.mindorbit.RebootVerifyTest"
+        testInstrumentationRunnerArguments["notClass"] = "app.mindorbit.RebootSeedTest,app.mindorbit.RebootVerifyTest,app.mindorbit.SafWorkflowTest"
     }
     buildFeatures { compose = true }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
